@@ -8,4 +8,4 @@ WORKDIR /server
 EXPOSE 3000
 
 RUN npm install
-CMD ["node", "src/index.js"]
+CMD ["node", "src/app.js"]
