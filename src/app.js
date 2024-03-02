@@ -1,3 +1,6 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 import configureExpress from './config/express.js';
 import configureDatabase from './config/database.js';
 

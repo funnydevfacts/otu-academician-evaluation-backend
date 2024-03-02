@@ -1,8 +1,11 @@
 import express from 'express';
+
+import { createUser, getUser } from '../controllers/userController.js';
+
 const router = express.Router();
 
-router.get('/', (req, res) => {
-  res.send('Welcome to the API! with users');
-});
+router.route('/')
+  .get(getUser)
+  .post(createUser);
 
 export default router;
